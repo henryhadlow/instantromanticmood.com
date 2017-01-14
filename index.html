@@ -37,23 +37,68 @@
 
         <!-- Fireplace -->
         <div class="video-wrapper">
-          <iframe frameborder="0" allowfullscreen title="Rain and thunder sounds" src="https://www.youtube.com/embed/EFPfeuiLAWU?autoplay=1&hd=1&rel=0&autohide=1&showinfo=0">
-          </iframe>
+          <iframe
+            id="fire-video"
+            frameborder="0"
+            allowfullscreen
+            title="Fireplace with burning logs"
+            src="https://www.youtube.com/embed/EFPfeuiLAWU?autoplay=1&hd=1&rel=0&autohide=1&showinfo=0&iv_load_policy=3&enablejsapi=1"
+          ></iframe>
         </div>
 
         <!-- Rain -->
         <div class="video-wrapper">
-          <iframe frameborder="0" allowfullscreen title="Rain and thunder sounds" src="//www.youtube.com/embed/aDfZ6STAfqA?autoplay=1&hd=1&rel=0&autohide=1&showinfo=0">
-          </iframe>
+          <iframe
+            id="rain-video"
+            frameborder="0"
+            allowfullscreen
+            title="Rain and thunder sounds"
+            src="https://www.youtube.com/embed/aDfZ6STAfqA?autoplay=1&hd=1&rel=0&autohide=1&showinfo=0&iv_load_policy=3&enablejsapi=1"
+          ></iframe>
         </div>
 
         <!-- Jazz -->
         <div class="video-wrapper">
-          <iframe frameborder="0" allowfullscreen title="Rain and thunder sounds" src="//www.youtube.com/embed/HMnrl0tmd3k?autoplay=1&hd=1&rel=0&autohide=1&showinfo=0">
-          </iframe>
+          <iframe
+            id="jazz-video"
+            frameborder="0"
+            allowfullscreen
+            title="Smooth jazz"
+            src="https://www.youtube.com/embed/HMnrl0tmd3k?autoplay=1&hd=1&rel=0&autohide=1&showinfo=0&iv_load_policy=3&enablejsapi=1"
+          ></iframe>
         </div>
 
-        <!-- Combo -->
-        <!-- https://www.youtube.com/watch?v=xhHjurehIYU -->
+      <script type="text/javascript">
+        var tag = document.createElement('script');
+        tag.id = 'iframe-demo';
+        tag.src = 'https://www.youtube.com/iframe_api';
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        var fireVideo;
+        var rainVideo;
+        var jazzVideo;
+        function onYouTubeIframeAPIReady() {
+          fireVideo = new YT.Player('fire-video', {
+              events: {
+                'onReady': onPlayerReady
+              }
+          });
+          rainVideo = new YT.Player('rain-video', {
+              events: {
+                'onReady': onPlayerReady
+              }
+          });
+          rainVideo = new YT.Player('jazz-video', {
+              events: {
+                'onReady': onPlayerReady
+              }
+          });
+        }
+        function onPlayerReady(event) {
+          event.target.setVolume(20);
+          event.target.pauseVideo();
+        }
+      </script>
     </body>
 </html>
