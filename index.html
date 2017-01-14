@@ -173,21 +173,23 @@
 
         var fireVideo;
         var rainVideo;
-        var jazzVideo;
         function onYouTubeIframeAPIReady() {
           fireVideo = new YT.Player('fire-video', {
               events: {
-                'onReady': onPlayerReady
+                'onReady': onFireReady
               }
           });
           rainVideo = new YT.Player('rain-video', {
               events: {
-                'onReady': onPlayerReady
+                'onReady': onRainReady
               }
           });
         }
-        function onPlayerReady(event) {
+        function onFireReady(event) {
           event.target.setVolume(20);
+        }
+        function onRainReady(event) {
+          event.target.setVolume(25);
         }
       </script>
     </body>
