@@ -40,6 +40,30 @@
             margin: 0 auto;
           }
 
+          .video-wrapper {
+            clear: both;
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            margin-bottom: 30px;
+          }
+
+          .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
+
+          iframe {
+            opacity: 0.5;
+            transition: opacity .25s ease-in-out;
+            -moz-transition: opacity .25s ease-in-out;
+            -webkit-transition: opacity .25s ease-in-out;
+          }
+          iframe:hover {
+            opacity: 1;
           }
         </style>
 
