@@ -25,7 +25,11 @@
 
           body {
             max-width: 960px;
-            margin: 15px auto 25px auto;
+            margin: 0 auto;
+          }
+
+          .border {
+            margin: 15px 15px 25px;
             border: 1px solid #4d4445;
             padding: 25px;
           }
@@ -40,13 +44,12 @@
             margin-left: -0.333333333em;
           }
 
-          @media only screen and (min-width: 500px) {
-            body {
-              margin: 20px auto 30px auto;
+          @media only screen and (min-width: 700px) {
+            .border {
+              margin: 20px 20px 30px;
               padding: 30px;
             }
             h1 {
-              font-size: 48px;
               width: 33%;
               float: right;
               box-sizing: border-box;
@@ -55,6 +58,11 @@
             .videos {
               width: 67%;
               float: right;
+            }
+          }
+          @media only screen and (min-width: 960px) {
+            h1 {
+              font-size: 42px;
             }
           }
 
@@ -118,51 +126,53 @@
         </script>
     </head>
     <body>
-      <h1>
-        Instant<br>
-        Romantic<br>
-        Mood<br>
-        <span class="hang">.com</span>
-      </h1>
+      <div class="border">
+        <h1>
+          Instant<br>
+          Romantic<br>
+          Mood<br>
+          <span class="hang">.com</span>
+        </h1>
 
-      <div class="videos">
-        <!-- Jazz -->
-        <div class="video-wrapper">
-          <iframe
-            id="jazz-video"
-            frameborder="0"
-            allowfullscreen
-            title="Jazz – Bill Evans playing live, 1964"
-            src="https://www.youtube.com/embed/uco5FNbjqv0?autoplay=1&hd=1&rel=0&autohide=1&showinfo=0&iv_load_policy=3&enablejsapi=1"
-          ></iframe>
+        <div class="videos">
+          <!-- Jazz -->
+          <div class="video-wrapper">
+            <iframe
+              id="jazz-video"
+              frameborder="0"
+              allowfullscreen
+              title="Jazz – Bill Evans playing live, 1964"
+              src="https://www.youtube.com/embed/uco5FNbjqv0?autoplay=1&hd=1&rel=0&autohide=1&showinfo=0&iv_load_policy=3&enablejsapi=1"
+            ></iframe>
+          </div>
+
+          <!-- Fireplace -->
+          <div class="video-wrapper">
+            <iframe
+              id="fire-video"
+              frameborder="0"
+              allowfullscreen
+              title="Fireplace with burning logs"
+              src="https://www.youtube.com/embed/EFPfeuiLAWU?autoplay=1&hd=1&rel=0&autohide=1&showinfo=0&iv_load_policy=3&enablejsapi=1"
+            ></iframe>
+          </div>
+
+          <!-- Rain -->
+          <div class="video-wrapper">
+            <iframe
+              id="rain-video"
+              frameborder="0"
+              allowfullscreen
+              title="Rain and thunder sounds"
+              src="https://www.youtube.com/embed/Fm0sToWtatw?autoplay=1&hd=1&rel=0&autohide=1&showinfo=0&iv_load_policy=3&enablejsapi=1"
+            ></iframe>
+          </div>
         </div>
 
-        <!-- Fireplace -->
-        <div class="video-wrapper">
-          <iframe
-            id="fire-video"
-            frameborder="0"
-            allowfullscreen
-            title="Fireplace with burning logs"
-            src="https://www.youtube.com/embed/EFPfeuiLAWU?autoplay=1&hd=1&rel=0&autohide=1&showinfo=0&iv_load_policy=3&enablejsapi=1"
-          ></iframe>
-        </div>
-
-        <!-- Rain -->
-        <div class="video-wrapper">
-          <iframe
-            id="rain-video"
-            frameborder="0"
-            allowfullscreen
-            title="Rain and thunder sounds"
-            src="https://www.youtube.com/embed/Fm0sToWtatw?autoplay=1&hd=1&rel=0&autohide=1&showinfo=0&iv_load_policy=3&enablejsapi=1"
-          ></iframe>
-        </div>
+        <p class="credit">
+          Brought to you by <a href="https://www.manofscience.co.uk">Henry</a>
+        </p>
       </div>
-
-      <p class="credit">
-        Brought to you by <a href="https://www.manofscience.co.uk">Henry</a>
-      </p>
 
       <script type="text/javascript">
         var tag = document.createElement('script');
