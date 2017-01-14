@@ -185,15 +185,9 @@
                 'onReady': onPlayerReady
               }
           });
-          rainVideo = new YT.Player('jazz-video', {
-              events: {
-                'onReady': onPlayerReady
-              }
-          });
         }
         function onPlayerReady(event) {
           event.target.setVolume(20);
-          event.target.pauseVideo();
         }
       </script>
     </body>
