@@ -20,69 +20,41 @@
           html {
             height: 100%;
 
-            background: #1f1e22;
-            color: #f9d0bd;
+            background: #000;
+            color: #ddd;
 
-            font-family: "Young serif", -apple-system, BlinkMacSystemFont,
-              "Segoe UI", "Roboto", "Oxygen",
-              "Ubuntu", "Cantarell", "Fira Sans",
-              "Droid Sans", "Helvetica Neue", sans-serif;
+            font-family: "Young serif", serif;
+            text-align: center;
           }
 
           body {
-            max-width: 960px;
+            max-width: 600px;
             margin: 0 auto;
-          }
-
-          .border {
-            margin: 15px 15px 25px;
-            border: 1px solid #4d4445;
-            padding: 25px;
+            padding: 20px;
           }
 
           h1 {
-            font-size: 36px;
-            line-height: 1.333333333;
-            margin-top: 5px;
-            margin-bottom: 40px;
+            font-size: 24px;
+            letter-spacing: 0.03em;
+            margin: 5em 0 6.5em;
           }
-          .hang {
-            margin-left: -0.333333333em;
-          }
-
-          @media only screen and (min-width: 700px) {
-            .border {
-              margin: 20px 20px 30px;
-              padding: 30px;
-            }
+          @media only screen and (min-width: 500px) {
             h1 {
-              width: 33%;
-              float: right;
-              box-sizing: border-box;
-              padding-left: 30px;
-            }
-            .videos {
-              width: 67%;
-              float: right;
-            }
-          }
-          @media only screen and (min-width: 960px) {
-            h1 {
-              font-size: 42px;
+              font-size: 27px;
             }
           }
 
           a {
             color: inherit;
             text-decoration: none;
-            border-bottom: 1px solid #ecc4b1;
+            border-bottom: 1px solid #999;
             transition: color .25s ease-in-out, border-bottom .25s ease-in-out;
             -moz-transition: color .25s ease-in-out, border-bottom .25s ease-in-out;
             -webkit-transition: color .25s ease-in-out, border-bottom .25s ease-in-out;
           }
           a:hover {
-            color: #f9d0bd;
-            border-bottom: 1px solid #f9d0bd;
+            color: #fff;
+            border-bottom: 1px solid #ddd;
           }
 
           .video-wrapper {
@@ -90,7 +62,7 @@
             position: relative;
             padding-bottom: 56.25%; /* 16:9 */
             height: 0;
-            margin-bottom: 30px;
+            margin-bottom: 120px;
           }
 
           .video-wrapper iframe {
@@ -115,9 +87,9 @@
           }
 
           .credit {
-            color: #ecc4b1;
-            margin-top: 50px;
-            margin-bottom: 5px;
+            color: #bbb;
+            margin-top: 3em;
+            margin-bottom: 1em;
           }
         </style>
 
@@ -132,13 +104,8 @@
         </script>
     </head>
     <body>
-      <div class="border">
-        <h1>
-          Instant<br>
-          Romantic<br>
-          Mood<br>
-          <span class="hang">.com</span>
-        </h1>
+      <div class="wrapper">
+        <h1>instant&#8203;romantic&#8203;mood&#8203;.com</h1>
 
         <div class="videos">
           <!-- Jazz -->
