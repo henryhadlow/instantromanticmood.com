@@ -86,7 +86,7 @@
             opacity: 1;
           }
 
-          .credit {
+          p {
             color: #bbb;
             margin-top: 3em;
             margin-bottom: 1em;
@@ -132,6 +132,8 @@
           </div>
         </div>
 
+        <p id="mobile-browser-message"></p>
+
         <p class="credit">
           Brought to you by <a href="https://manofscience.co.uk">Henry</a>
         </p>
@@ -157,6 +159,7 @@
         (function () {
           if (isMobile.any) {
             // Add a paragraph to say that not all the videos will play
+            document.getElementById("mobile-browser-message").innerHTML = "For a fulfilling experience (jazz, fire and rain <em>all at the same time</em>), please visit instant&#8203;romantic&#8203;mood&#8203;.com on your laptop.";
           }
         })();
       </script>
