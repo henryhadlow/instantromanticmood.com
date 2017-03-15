@@ -4,6 +4,12 @@
 
 Raining outside, a fire in the hearth, jazz…
 
+## Deploying
+
+To deploy to Amazon s3:
+
+- `s3_website push`
+
 ## To do
 
 - [x] Styles
