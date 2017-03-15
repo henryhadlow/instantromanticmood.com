@@ -1,15 +1,6 @@
-# humanstxt.org/
-# The humans responsible & technology colophon
+# instantromanticmood.com
 
-# TEAM
+Brought to you by Henry Hadlow
 
-    <name> -- <role> -- <twitter>
-
-# THANKS
-
-    <name>
-
-# TECHNOLOGY COLOPHON
-
-    CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+- manofscience.co.uk
+- @henryhadlow
