@@ -2,7 +2,7 @@
 
 # instantromanticmood.com
 
-Raining outside, a fire in the hearth, jazz…
+Instant romantic mood. Jazz, a fire in the hearth, and outside, a distant thunderstorm…
 
 ## Deploying
 
@@ -16,5 +16,6 @@ To deploy to Amazon s3:
 - [x] Better music
 - [x] Get rid of the YouTube bubbles
 - [x] Deploy to Amazon S3
+- [x] Favicons
 - [ ] Twitter card
 - [ ] Facebook card
